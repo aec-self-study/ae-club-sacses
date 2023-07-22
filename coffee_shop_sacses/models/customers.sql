@@ -1,3 +1,5 @@
+{{ config(materialized='table') }}
+
 with customer_first_order as (
 
   select
@@ -25,4 +27,3 @@ final as (
 select
 *
 from final
-limit 5;
