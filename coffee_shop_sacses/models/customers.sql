@@ -13,7 +13,7 @@ with customer_first_order as (
 final as (
 
   select
-    customers.id,
+    customers.id as customer_id,
     customers.name,
     customers.email,
     customer_first_order.first_order_at,
